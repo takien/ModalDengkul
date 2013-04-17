@@ -1,0 +1,155 @@
+<!--
+/*! ===========================================================
+ * modalDengkul.js
+ * version: 1.0
+ * http://takien.com/modal-dengkul
+ * Inspired by Facebook image modal.
+ * ===========================================================
+ * Copyright 2013 Takien.
+ * Follow me @cektkp
+ * License GNU GPL v3
+ * ========================================================== */
+ -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>ModalDengkul.js Demo</title>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/modaldengkul.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		$('.modal').modalDengkul();
+	});
+	</script>
+	<link rel="stylesheet" href="css/modaldengkul.css"/>
+	<style type="text/css">
+		/* this CSS is intended to this Docs page */
+		body {
+			font-family:"Lucida Grande",sans-serif;
+			font-size:14px;
+		}
+		a {
+			color:#999
+		}
+		.main-wrap {
+			width:800px;
+			margin:10px auto;
+		}
+		h1 span {
+			font-weight:300;
+			color:#999;
+			font-size:15px;
+		}
+		hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:1em 0 1em;height:0}
+		#footer {
+			padding-top:70px;
+		}
+		#footer p {
+			font-size:12px;
+			text-align:center;
+		}
+		.quick-links {
+		  min-height: 30px;
+		  margin: 30px 0 0 0;
+		  padding: 5px 20px;
+		  list-style: none;
+		  text-align: center;
+		  overflow: hidden;
+		}
+		.quick-links:first-child {
+		  min-height: 0;
+		}
+		.quick-links li {
+		  display: inline;
+		  margin: 0 8px;
+		  color: #999;
+		}
+		.quick-links .github-btn,
+		.quick-links .tweet-btn,
+		.quick-links .follow-btn,
+		.quick-links .gplus-btn,
+		.quick-links .fb-btn {
+		  position: relative;
+		  top: 5px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="main-wrap">
+		<h1>ModalDengkul.js v1.0- <span>A jQuery image modal box inspired by Facebook</span></h1>
+		<hr/>
+		<p>A jQuery image modal box inspired by Facebook, i said. </p>
+		<h2>Features</h2>
+		<ul>
+			<li>Responsive</li>
+			<li>Lightweight</li>
+			<li>Keyboard navigation (next, close etc)</li>
+		</ul>
+		
+		<h2>How to use?</h2>
+		<p>See source code ( Ctrl + U )</p>
+		
+		<h2>License</h2>
+		<p>GNU GPLv3</p>
+		
+		
+		
+		<h2>Live Demo</h2>
+		
+		<div id="gallery">
+			<a class="modal" data-title="Lorem ipsum dolor sit amet" data-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. " href="images/sample-large.jpg"><img src="images/sample-small.jpg" alt=""/></a>
+			
+			
+			<a class="modal" data-title="Lorem ipsum dolor sit amet" data-description="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" href="images/sample-large-2.jpg"><img src="images/sample-small-2.jpg" alt=""/></a>
+			
+			<a class="modal" data-title="Lorem ipsum dolor sit amet 3" data-description="bbbcbwwe rerwrewer?" href="images/sample-large-3.jpg"><img src="images/sample-small-3.jpg" alt=""/></a>
+			
+			<a class="modal" data-title="Lorem ipsum dolor sit amet 4" data-description="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet." href="images/sample-large-4.jpg"><img src="images/sample-small-4.jpg" alt=""/></a>
+			
+			<a class="modal" data-title="Lorem ipsum dolor sit amet 5" data-description="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 5" href="images/sample-large-5.jpg"><img src="images/sample-small-5.jpg" alt=""/></a>
+			
+			
+		</div><!--gallery-->
+		
+		 <ul class="quick-links">
+		<li class="fb-btn">
+		<fb:like layout="button_count" send="false" href="http://takien.github.com/tTooltip/"></fb:like>
+		</li>
+		  <li class="follow-btn">
+			<a href="https://twitter.com/cektkp" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cektkp</a>
+		  </li>
+		  <li class="tweet-btn">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://takien.github.com/modalDengkul/" data-count="horizontal" data-via="cektkp" data-related="cektkp:Creator of modalDengkul.js">Tweet</a>
+		  </li>
+		  <li class="gplus-btn">
+			<g:plusone url="http://cektkp.com/" size="medium"></g:plusone>
+		   </li>
+		</ul><!--quick-links-->
+		<div id="footer">
+		<hr/>
+			<p>Copyright &copy; 2013 - <a href="http://takien.com" target="_blank">takien.com</a>. Photos courtesy of <a target="_blank" href="http://pixabay.com/">http://pixabay.com/</a></p>
+		</div>
+	</div>
+	
+<!--for docs purpose only :p-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=394280927787";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</body>
+</html>
